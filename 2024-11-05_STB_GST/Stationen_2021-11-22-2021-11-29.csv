@@ -1,0 +1,19 @@
+﻿"Bundesland / Messnetz";Stationscode;Stationsname;Stationsumgebung;"Art der Station";Schadstoff;"Art der Auswertung";Datum;Uhrzeit;Messwert;Einheit
+Berlin;DEBE032;"Berlin Grunewald (3.5 m)";"ländlich stadtnah";Hintergrund;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";22.11.2021;-;6;µg/m³
+Berlin;DEBE032;"Berlin Grunewald (3.5 m)";"ländlich stadtnah";Hintergrund;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";23.11.2021;-;13;µg/m³
+Berlin;DEBE032;"Berlin Grunewald (3.5 m)";"ländlich stadtnah";Hintergrund;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";24.11.2021;-;12;µg/m³
+Berlin;DEBE032;"Berlin Grunewald (3.5 m)";"ländlich stadtnah";Hintergrund;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";25.11.2021;-;21;µg/m³
+Berlin;DEBE032;"Berlin Grunewald (3.5 m)";"ländlich stadtnah";Hintergrund;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";26.11.2021;-;15;µg/m³
+Berlin;DEBE032;"Berlin Grunewald (3.5 m)";"ländlich stadtnah";Hintergrund;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";27.11.2021;-;18;µg/m³
+Berlin;DEBE032;"Berlin Grunewald (3.5 m)";"ländlich stadtnah";Hintergrund;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";28.11.2021;-;17;µg/m³
+Berlin;DEBE032;"Berlin Grunewald (3.5 m)";"ländlich stadtnah";Hintergrund;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";29.11.2021;-;16;µg/m³
+Berlin;DEBE126;"Berlin Karl-Marx-Straße II";"städtisches Gebiet";Verkehr;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";22.11.2021;-;11;µg/m³
+Berlin;DEBE126;"Berlin Karl-Marx-Straße II";"städtisches Gebiet";Verkehr;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";23.11.2021;-;17;µg/m³
+Berlin;DEBE126;"Berlin Karl-Marx-Straße II";"städtisches Gebiet";Verkehr;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";24.11.2021;-;17;µg/m³
+Berlin;DEBE126;"Berlin Karl-Marx-Straße II";"städtisches Gebiet";Verkehr;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";25.11.2021;-;31;µg/m³
+Berlin;DEBE126;"Berlin Karl-Marx-Straße II";"städtisches Gebiet";Verkehr;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";26.11.2021;-;24;µg/m³
+Berlin;DEBE126;"Berlin Karl-Marx-Straße II";"städtisches Gebiet";Verkehr;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";27.11.2021;-;25;µg/m³
+Berlin;DEBE126;"Berlin Karl-Marx-Straße II";"städtisches Gebiet";Verkehr;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";28.11.2021;-;26;µg/m³
+Berlin;DEBE126;"Berlin Karl-Marx-Straße II";"städtisches Gebiet";Verkehr;"Feinstaub (PM₁₀)";"Tagesmittel (1TMW)";29.11.2021;-;21;µg/m³
+
+"Quelle: Umweltbundesamt, https://www.umweltbundesamt.de/daten/luft/luftdaten/stationen (Abruf: 23.09.2022). Alle Uhrzeiten sind in der jeweils zum Messzeitpunkt gültigen Zeit (MEZ bzw. MESZ) angegeben."
