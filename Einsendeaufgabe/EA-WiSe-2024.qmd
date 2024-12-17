@@ -1,0 +1,584 @@
+---
+title: "Einsendeaufgabe WiSe 2024/25"
+author: "<IHR NAME>"
+date: today
+format:
+  html:
+    toc: false
+    html-math-method: katex
+  pdf:
+    toc: false
+    number-depth: 0
+    number-sections: true
+    colorlinks: true
+  markdown: 
+    wrap: auto
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(mosaic)
+library(here)
+library(zip)
+```
+```{css, echo=FALSE}
+.Antwort, .antwort {
+  background-color: rgb(135, 206, 250, 0.2);
+  min-height: 1em;
+  padding: 5px 5px 2px 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+.Einleitung {
+  background-color: #ADDDFF;
+  border: 1px solid #ADD2FF;
+  padding: 2px 2px 2px 2px;
+}
+body {
+background-color: #FAFAFA;
+}
+```
+
+::: Einleitung
+## Einleitung
+
+Dies ist die Einsendeaufgabe für das Fach Statistik im WiSe 2024/25.
+Sie sollen dieses Quarto-Dokument ausfüllen in dem sie die freien R-Chunks mit Inhalt füllen um die darüber stehenden Aufgaben zu lösen.
+
+### Ein kleines Beispiel
+
+#### Beispiel-Aufgabe
+
+Die Entwicklungsabteilung der Firma WeissAlles AG besteht aus 10 Mitarbeiter:innen.
+Auf der Weihnachtsfeier kommt die Abteilungsleiterin nach dem hastigen Genuss einiger Gläser alkoholfreien Glühweins auf die Idee die Körpergröße (in cm) alle neun anwesenden Mitarbeiter:innen zu ermitteln und erhält die folgende Urliste:
+
+167, 168, 168, 172, 179, 181, 196, 182, 175
+
+Sie als Statistik-Expert:in sollen nun die folgenden statistischen Kennzahlen ermitteln:
+
+1.  *Arithmetische Mittelwert*
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+2.  *Den Median*
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+3.  *(Schätzer-)Varianz*
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+4.  *(Schätzer-)Standardabweichung*
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+5.  *Auf der Weihnachtsfeier fehlt bekanntlich eine Person. Sie kennen diese Person nicht, da sie just erst letzte Woche in der Abteilung angefangen hat. Die Abteilkungsleiterin verspricht demjenigen einen Tag Urlaub, der die Körpergrößer der fehlenden Person am besten schätzt. Geben Sie einen geschätzten Wert an und begründen Sie ihre Wahl.*
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+#### Was sollen Sie nun genau tuen?
+
+In der Beispielaufgabe gibt es vier sogenannte "R-Chunks".
+Das sind die Bereiche zwischen den drei Gravis mit dem Anhang "{r}" (also "\`\`\`{r}") und dem Ende mit nur drei Gravis "\`\`\`".
+In diesen Blöcken sollen Sie R Code einfügen der die darüberstehenden Aufgaben beantwortet.
+
+In unserem Beispiel wäre das:
+
+1.  *Arithmetische Mittelwert*
+
+:::{.Antwort}
+```{r}
+daten <- c(167, 168, 168, 172, 179, 181, 196, 182, 175)
+mean(daten)
+```
+:::
+
+2.  *Den Median*
+
+:::{.Antwort}
+```{r}
+daten <- c(167, 168, 168, 172, 179, 181, 196, 182, 175)
+median(daten)
+```
+:::
+
+3.  *(Schätzer-)Varianz*
+
+:::{.Antwort}
+```{r}
+daten <- c(167, 168, 168, 172, 179, 181, 196, 182, 175)
+var(daten)
+```
+:::
+
+4.  *(Schätzer-)Standardabweichung*
+
+:::{.Antwort}
+```{r}
+daten <- c(167, 168, 168, 172, 179, 181, 196, 182, 175)
+sd(daten)
+```
+:::
+
+Die 5. Aufgabe ist eine Textaufgabe.
+Ihre Antwort dazu schreiben Sie bitte zwischen den beiden HTML-Kommentaren "\<!-- Ihre Lösung - START --\>" und "\<!-- Ihre Lösung - ENDE --\>".
+
+Eine mögliche Antwort wäre:
+
+5.  *Auf der Weihnachtsfeier fehlt bekanntlich eine Person. Sie kennen diese Person nicht, da sie just erst letzte Woche in der Abteilung angefangen hat. Die Abteilungsleiterin verspricht demjenigen einen Tag Urlaub, der die Körpergröße der fehlenden Person am besten schätzt. Geben Sie einen geschätzten Wert an und begründen Sie ihre Wahl.*
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+\
+Ich würde den Mittelwert 176,44 als Schätzung angeben, da er auf Grund seiner summatorischen Eigenschaft die 9 Anwesenden gut charakterisiert.
+Ein neues Mitglied der Abteilung wird, aus meiner persönlichen Sicht, nicht zu weit in der Körpergröße von den anderen unterscheiden.\
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+**Zur Bewertung:**
+
+-   Ich werde bei den R-Aufgaben darauf gucken ob der von ihnen abgegebene Code syntaktisch korrekt, also lauffähig, ist und in geeigneter Art und Weise die Aufgabe löst.
+
+-   Bei den Textaufgaben geht es mir darum, dass sie jeweils Begründungen für ihre Antworten geben.
+    So ist die Antwort im Beispiel "Mittelwert" nicht falsch, aber die Begründung etwas oberflächlich.
+    Auch könnten sie die Standartabweichung heranziehen und sagen, dass durchaus mit einer erheblichen Abweichung vom Mittelwert in der 9er Gruppe zu rechnen ist.
+    Das spricht nicht unbedingt für den Mittelwert.
+    Ebenso hätten Sie hier den Median angeben können.
+    Dann wäre aber eine Betrachtung des Interquantilsabstand unter Umständen sinnvoll gewesen und hätte von Ihnen dort selbstständig gemacht werden sollen.
+
+**Was genau ist abzugeben?**
+
+Speichern Sie die Einsendeaufgabe als allererstes bitte nach folgendem Schema:
+
+"EA-WiSe-2024-NACHNAME-VORNAME.qmd"
+
+Eine Einsendeaufgabe von mir würde demnach den Namen "EA-WiSe-2023-Markgraf-Norman.qmd" tragen.
+
+Nachdem Sie die Einsendeaufgaben bearbeitet haben, lassen Sie das Quarto mit dem Render-Button in ein HTML Dokument übersetzen.
+
+Damit sollten die folgenden zwei Dateien in ihrem Verzeichnis stehen:
+
+"EA-WiSe-2024-NACHNAME-VORNAME.qmd" und "EA-WiSe-2024-NACHNAME-VORNAME.html"
+
+In meinem Fall wären es:
+
+"EA-WiSe-2024-Markgraf-Norman.qmd" und "EA-WiSe-2024-Markgraf-Norman.html"
+
+Diese beiden Dateien sollten von Ihnen in ein ZIP-Archiv mit dem Dateinamen "EA-WiSe-2024-NACHNAME-VORNAME.zip" gepackt werden.
+
+Das geht u.a.
+mit folgendem R Code:
+
+```{r eval=FALSE}
+# Ggf. einmalig:
+# install.packages("zip")
+library(zip) 
+library(here)
+Pfad <- "."  # Muss gegebenfalls angepasst werden! Zum Beispiel:
+# Pfad <- "Einsendeaufgabe"
+
+IhrNachname <- "<Nachname>"
+IhrVorname <- "<Vorname>"
+
+Dateiname <- paste0("EA-WiSe-2024-",IhrNachname,"-",IhrVorname)
+
+zip(
+    here(Pfad, paste0(Dateiname,".zip")),  # Dateiname des ZIP-Archives
+    c(
+        here(Pfad, paste0(Dateiname, ".qmd")),  # Dateiname des Quarto Dokuments
+        here(Pfad, paste0(Dateiname, ".html"))  # Dateiname des HTML Dokuments
+    ),
+    compression_level = 9,
+    mode = "cherry-pick"
+)
+```
+
+Dieses ZIP-Archive muss von Ihnen über *moodle* abgegeben werden!
+
+**Hinweise:**
+
+-   Nur der R-Code innerhalb der R-Chunks und der Antworttext zwischen den HTML-Kommentaren wird bewertet!
+
+-   Vergessen Sie oben in der YAML-Präambel nicht den Text "<IHR NAME>" durch ihren Namen zu ersetzen!
+
+:::
+
+## Aufgaben
+
+### Vorbereitungen
+
+Wir laden aus dem Internet die `tipping` Daten und speichern diese unter `tips`.
+
+Lesen Sie sich die Informationen unter <https://vincentarelbundock.github.io/Rdatasets/doc/reshape2/tips.html> durch.
+
+Dort erfahren sie auch was hinter den einzelnen Variablen steckt.
+
+Sofern nicht anders gekennzeichnet beziehen sich alle folgenden Aufgaben auf diese Datentabelle!
+
+```{r}
+# Zu erst laden wir das Paket "mosaic"
+library(mosaic)
+# Laden der Daten von der folgenden URL:
+tips_url <- "https://vincentarelbundock.github.io/Rdatasets/csv/reshape2/tips.csv"
+tips <- read.csv(tips_url)
+tips %>% select(-rownames) -> tips
+```
+
+\
+
+### Aufgabe 1 (2 + 2 + 2 + 2 = 8 Punkte)
+
+Betrachten Sie die Ausgabe des folgenden Befehls und beantworten sie danach die anschließenden Fragen.
+
+```{r}
+str(tips)
+```
+
+a)  *Wie viele Beobachtungen umfasst die Datentabelle `tips`?*\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+b)  *Wie viele Merkmale umfasst die Datentabelle `tips`?*\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+c)  *Wie viele nummerische Merkmale umfasst die Datentabelle `tips`?*\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+d)  *Wieviele kategoriale Merkmale umfasst die Datentabelle `tips`?*\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+    
+<!-- Ihre Lösung - ENDE  -->
+:::
+\
+
+### Aufgabe 2 (2 + 2 + 2 + 2 = 8 Punkte)
+
+Betrachten Sie die Ausgabe des folgenden Befehls und beantworten sie danach die anschließenden Fragen.
+
+```{r}
+inspect(tips)
+```
+
+a) *Welche nominale Variable hat die meisten Ausprägungen?*\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+    
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+b) *Wie viele binäre Variablen liegen vor?*\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+    
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+c) *Wie viele der metrischen Variablen sind stetige Variablen?*\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+    
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+d) *Wie viele der numerischen Variablen sind diskrete Variablen?*\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+    
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+\
+
+### Aufgabe 3 (2 + 2 + 4 = 8 Punkte)
+
+Wir wollen das Verhältnis der bezahlenden Frauen und Männer in der Datentabelle `tips` untersuchen.
+
+a)  *Bestimmen sie die absolute Anzahl der bezahlenden Frauen und Männer.*
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+b)  *Bestimmen sie die relative Anzahl der bezahlenden Frauen und Männer.*
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+c)  *Geben sie an, wie sie das Ergebnis aus Teil a) graphisch Darstellen können. (Tipp: Erstellen sie ein Säulen- oder Balkendiagramm!)*
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+\
+
+### Aufgabe 4 (Aufgabe 4 + 4 + 2 + 4 = 14 Punkte)
+
+In der Variabel 'tip' wird das erhaltene Trinkgeld beobachtet.
+Betrachten wir die 'favstats':
+
+```{r}
+
+```
+
+a)  Stellen Sie die Verteilung von 'tip' durch die ersten fünf Werte (aka Big5) mit der Hilfe einer geeigneten Graphik dar:
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+b)  Sie vermuten, dass die Verteilung für bezahlende Männer und Frauen unterschiedlich ist. Wie können sie das graphisch darstellen und überprüfen?
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+c)  Um den visuellen Eindruck zu untermauern, benötigen wir nun noch die konkreten Kennzahlen. Diese erhalten sie mittels?
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+d)  Beschreiben sie nun mit eigenen Worten (unter Einbeziehung der Kennzahlen) die Situation.
+    Wo genau liegen die Unterschiede zwischen den Kennzahlen für bezahlende Frauen und Männer.\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+\
+
+### Aufgabe 5 (4 + 3 + 2 + 3 + 3 + 3 = 18 Punkte)
+
+Ein Streudiagramm des Trinkgeldes (`tip`) und des Rechnungsbetrages (`total_bill`) sieht wie folgt aus:
+
+```{r}
+
+```
+
+a)  Aus welchem Grund könnte es sinnvoll sein, `tip` auf der Ordinate (y-Achse) und `total_bill` auf der Abszisse (x-Achse) abzutragen?
+    (Denken Sie an mögliche Ursache-Wirkungsbeziehungen!)\
+    
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+
+b)  Sehen sie im Streudiagramm eine Form von Zusammenhang zwischen Trinkgeld und Rechnungsbetrag?
+    Erläutern sie diesen ggf!
+    Haben Sie Vermutungen wieso dies so ist bzw.
+    warum sie keinen Zusammenhang sehen?\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+c)  Um ihren Eindruck im Streudiagramm zu untermauern berechnen Sie die dafür notwendige Kennzahl:
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+d)  Was würde sich bei b) und c) ändern, wenn wir Ordinate und Abszisse ändern würden?\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+    
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+e)  Unterstützen Sie ihre Antwort aus d) durch ein entsprechendes Streudiagramm.
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+f)  Unterstützen Sie ihre Antwort aus d) durch die dafür notwendige Kennzahl:
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+\
+
+### Aufgabe 6 (3 + 2 + 2 = 7 Punkte)
+
+Wir wollen den Zusammenhang von Tischen an denen geraucht wurde (`smoker`) und Tagen (`day`) untersuchen und betrachten dafür den folgenden Mosaikplot
+
+```{r}
+mosaicplot(day ~ smoker, data = tips)
+```
+
+a)  Berechnen Sie die Kennzahlen der absoluten Häufigkeiten für diesen Mosaikplot.
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+b)  Wie viele Tische an denen geraucht wurde gab es am Freitag?\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+c)  Wie viele Tische an denen nicht geraucht wurde gab es am Samstag?\
+
+:::{.Antwort}
+<!-- Ihre Lösung - START-->
+
+<!-- Ihre Lösung - ENDE  -->
+:::
+
+\
+
+### Aufgabe 7 (2 + 2 + 2 + 2 = 8 Punkte)
+
+a)  Berechnen Sie für den Rechnungsbetrag (`total_bill`) die Spannweite.
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+b)  Berechnen Sie für den Rechnungsbetrag (`total_bill`) den Median.
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+c)  Berechnen Sie für den Rechnungsbetrag (`total_bill`) die (geschätzte) Varianz.
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+d)  Berechnen Sie für den Rechnungsbetrag (`total_bill`) die (geschätzte) Standardabweichung.
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+\
+
+### Aufgabe 8 (2 + 2 + 2 + 2 + 2 = 10 Punkte)
+
+a)  Berechnen Sie das 80% Quantil für das Trinkgeld (`tip`).
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+b)  Berechnen Sie das 20% Quantil für das Trinkgeld (`tip`).
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+c)  Berechnen Sie das 45% Quantil für das Trinkgeld (`tip`).
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+d)  Berechnen Sie den Median für das Trinkgeld (`tip`).
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+
+e)  Berechnen Sie den Interquantilsabstand für das Trinkgeld (`tip`).
+
+:::{.Antwort}
+```{r}
+
+```
+:::
+    
+\
+
+**ENDE DER AUFGABEN DIESER EINSENDEAUFGABE**
